@@ -5,11 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <h1>Hello</h1>
-    <p>input your marks</p>
-    
+    <div class="container">
+        <!-- <form action="signup.html" method="post" id="signup"> -->
+        <form action="" id="gradeForm" >
+            <h1 id="h1">Student Grade checker</h1>
+            <div class="field">
+                <label for="marks">Marks:</label>
+                <input type="text" id="txtInput"  name="marks" placeholder="Enter your Marks" />
+            
+            </div>
+            <!-- when you use type button. it pevents your page from refreshing everytime you submit -->
+            <button id="btnSubmit" type="button">Check Grade</button>
+            <div class="field">
+                <p>Your Grade: <span id="txtOutput"></span></p>
+            </div>
+        </form>
+        <p id="info"> <small>This program prompts the user to input student marks.The input should be between 0 and 100. Then output the correct grade</small> </p>
+    </div> 
     <script src="./js/index.js"></script>
 </body>
 </html>
